@@ -105,6 +105,37 @@ int main(){
        cout <<"Enter your choice 1-5: ";
        char ch;
        cin>>ch;
+       cout<<endl;
+         switch(ch){
+          case '1':{
+           cout <<"Enter a word: ";
+           string word;
+           cin>>word;
+           obj.insert(word);
+           break;
+        }
+        case '2':{
+            obj.inorder(obj.root);
+            cout<<endl;
+            break;
+        }
+        case '3':{
+            obj.preorder(obj.root);
+            cout<<endl;
+            break;
+        }
+        case '4':{
+            obj.postorder(obj.root);
+            cout<<endl;
+            break;
+        }
+        case '5':{
+            cout<<"Exiting the program."<<endl;
+            return 0;
+        }
+        default:{
+            cout<<"Invalid choice. Please enter a number between 1 and 5."<<endl;
+        }
 
     }
 }
