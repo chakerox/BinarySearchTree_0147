@@ -40,8 +40,15 @@ class BinaryTree{
             return;// Tree was empty, new node becomes the root
         }if (element < parent->info) {
             parent->leftchild = newNode; // Insert as left child
-        } else {
+        } else if(element > parent->info) {
             parent->rightchild = newNode; // Insert as right child
+        }
+    }
+
+    //this function searches the current node of the specified node
+    // as wll as the current node of its parent
+    void search(string elemnet,Node* &parent, Node* &currentNode){
+        
         }
     }
 };
