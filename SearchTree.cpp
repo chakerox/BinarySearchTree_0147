@@ -23,4 +23,9 @@ class BinaryTree{
     BinaryTree(){
         root = NULL;//initializing root to null
     }
+    //insert a node in the binary tree
+    void insert(string element){
+        Node* newNode = new Node(element, NULL, NULL);
+       
+    }
 };
