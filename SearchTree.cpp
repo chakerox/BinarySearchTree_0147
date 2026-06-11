@@ -15,6 +15,9 @@ class Node{
         leftchild = l;
         rightchild = r;
     }
- 
-    
 };
+
+class BinaryTree{
+    public:
+    
+}
