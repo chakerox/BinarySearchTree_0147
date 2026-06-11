@@ -47,8 +47,23 @@ class BinaryTree{
 
     //this function searches the current node of the specified node
     // as wll as the current node of its parent
-    void search(string elemnet,Node* &parent, Node* &currentNode){
-        
+    void search(string element,Node* &parent, Node* &currentNode){
+        currentNode = root;
+        parent = NULL;
+
+        while ((currentNode != NULL)&&(currentNode->info != element)){
+            parent = currentNode;
+            if (element < currentNode->info) {
+                currentNode = currentNode->leftchild; // Move to left child
+            } else {
+                currentNode = currentNode->rightchild; // Move to right child
+            }
         }
     }
+    void inorder(Node*ptr){
+        if(root == NULL){
+            cout<<"Tree is empty"<<endl;
+            return;
+    }
+
 };
