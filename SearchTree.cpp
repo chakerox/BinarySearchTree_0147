@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
+//#include<tre
 using namespace std;
-
 
 class Node{
     public:
@@ -33,5 +33,15 @@ class BinaryTree{
        Node* parent = NULL;
         Node* currentNode = NULL;
         
+        search(element, parent, currentNode);
+
+        if (parent == NULL) {
+            root = newNode; 
+            return;// Tree was empty, new node becomes the root
+        }if (element < parent->info) {
+            parent->leftchild = newNode; // Insert as left child
+        } else {
+            parent->rightchild = newNode; // Insert as right child
+        }
     }
 };
