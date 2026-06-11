@@ -10,7 +10,11 @@ class Node{
     Node* rightchild;
 
     //Consructor for the node class
-    
+    Node(string i, Node* l, Node* r){
+        info = i;
+        leftchild = l;
+        rightchild = r;
+    }
  
     
 };
